@@ -78,6 +78,8 @@ my $colors_num = scalar @colors_keys;
         *{__PACKAGE__ . '::' . $color} = sub { "\e[${code}m$_[0]\e[0m" };
     }
 
+    sub decolorize { local $_ = $_[0]; s/\e\[\d+m//g; $_ }
+
     sub rainbow {
         my @chars = split //, shift;
         my @colored;
