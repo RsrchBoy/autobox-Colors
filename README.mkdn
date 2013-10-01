@@ -4,7 +4,7 @@ autobox::Colors - Simple string coloring via autobox
 
 # VERSION
 
-This document describes version 0.001 of autobox::Colors - released September 29, 2013 as part of autobox-Colors.
+This document describes version 0.001 of autobox::Colors - released September 30, 2013 as part of autobox-Colors.
 
 # SYNOPSIS
 
@@ -33,8 +33,17 @@ Please see those modules/websites for more information related to this module.
 
 # SOURCE
 
-The development version is on github at [http://github.com//autobox-Colors](http://github.com//autobox-Colors)
-and may be cloned from [git://github.com//autobox-Colors.git](git://github.com//autobox-Colors.git)
+The development version is on github at [http://github.com/RsrchBoy/autobox-Colors](http://github.com/RsrchBoy/autobox-Colors)
+and may be cloned from [git://github.com/RsrchBoy/autobox-Colors.git](git://github.com/RsrchBoy/autobox-Colors.git)
+
+# BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+https://github.com/RsrchBoy/autobox-Colors/issues
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
 
 # AUTHOR
 
