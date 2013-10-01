@@ -1,4 +1,20 @@
+#
+# This file is part of autobox-Colors
+#
+# This software is copyright (c) 2013 by Chris Weyl.
+#
+# This is free software; you can redistribute it and/or modify it under
+# the same terms as the Perl 5 programming language system itself.
+#
 package autobox::Colors;
+BEGIN {
+  $autobox::Colors::AUTHORITY = 'cpan:RSRCHBOY';
+}
+{
+  $autobox::Colors::VERSION = '0.001';
+}
+# git description: 107a2d1
+
 
 # ABSTRACT: Simple string coloring via autobox
 
@@ -73,6 +89,14 @@ my $colors_num = scalar @colors_keys;
 
 {
     package autobox::Colors::STRING;
+BEGIN {
+  $autobox::Colors::STRING::AUTHORITY = 'cpan:RSRCHBOY';
+}
+{
+  $autobox::Colors::STRING::VERSION = '0.001';
+}
+# git description: 107a2d1
+
     while ( my ($color, $code) = each %all ) {
         no strict 'refs';
         *{__PACKAGE__ . '::' . $color} = sub { "\e[${code}m$_[0]\e[0m" };
@@ -98,7 +122,19 @@ my $colors_num = scalar @colors_keys;
 
 __END__
 
-=for :stopwords zentooo
+=pod
+
+=encoding utf-8
+
+=for :stopwords Chris Weyl zentooo
+
+=head1 NAME
+
+autobox::Colors - Simple string coloring via autobox
+
+=head1 VERSION
+
+This document describes version 0.001 of autobox::Colors - released September 30, 2013 as part of autobox-Colors.
 
 =head1 SYNOPSIS
 
@@ -121,6 +157,39 @@ zentooo E<lt>zentoooo@gmail.comE<gt>
 
 =head1 SEE ALSO
 
-Term::ANSIColors::Simple
+Please see those modules/websites for more information related to this module.
+
+=over 4
+
+=item *
+
+L<Term::ANSIColors::Simple|Term::ANSIColors::Simple>
+
+=back
+
+=head1 SOURCE
+
+The development version is on github at L<http://github.com/RsrchBoy/autobox-Colors>
+and may be cloned from L<git://github.com/RsrchBoy/autobox-Colors.git>
+
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+https://github.com/RsrchBoy/autobox-Colors/issues
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
+
+=head1 AUTHOR
+
+Chris Weyl <cweyl@alumni.drew.edu>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Chris Weyl.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
