@@ -73,6 +73,10 @@ my $colors_num = scalar @colors_keys;
 
 {
     package autobox::Colors::STRING;
+
+    use strict;
+    use warnings;
+
     while ( my ($color, $code) = each %all ) {
         no strict 'refs';
         *{__PACKAGE__ . '::' . $color} = sub { "\e[${code}m$_[0]\e[0m" };
